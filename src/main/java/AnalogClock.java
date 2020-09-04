@@ -7,7 +7,6 @@ class AnalogClock {
         Scanner in = new Scanner(System.in);
 
         //Reads ints from user
-        System.out.println("Enter what angle is the hour hand at: ");
         double hourAngle = in.nextDouble(); 
         
         double minuteAngle;
