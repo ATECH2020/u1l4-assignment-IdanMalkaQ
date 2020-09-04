@@ -14,11 +14,8 @@ class StudentDesks {
         int sumOfDesks2 = 0;
         int sumOfDesks3 = 0;
         //Reads ints from user
-        System.out.println("Enter how many kids are in the first class:");
         int class1 = in.nextInt();
-        System.out.println("Enter how many kids are in the second class:");
         int class2 = in.nextInt();
-        System.out.println("Enter how many kids are in the third class:");
         int class3 = in.nextInt();
 
         /*
@@ -93,7 +90,7 @@ class StudentDesks {
             sumOfDesks = sumOfDesks1 + sumOfDesks2 + sumOfDesks3;
         }
         
-        System.out.println("Your class will need " + sumOfDesks + " desks.");
+        System.out.println(sumOfDesks);
 
         // closing the scanner object
         in.close();
