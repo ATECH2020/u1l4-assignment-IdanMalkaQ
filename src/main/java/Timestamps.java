@@ -11,17 +11,11 @@ class Timestamps {
     int secondSum;
 
     // Reads ints from user
-    System.out.println("Enter your 1st hour: ");
     int hours1 = in.nextInt();
-    System.out.println("Enter your 1st minutes: ");
     int minutes1 = in.nextInt();
-    System.out.println("Enter your 1st seconds: ");
     int seconds1 = in.nextInt();
-    System.out.println("Enter your 2nd hour: ");
     int hours2 = in.nextInt();
-    System.out.println("Enter your 2nd minutes: ");
     int minutes2 = in.nextInt();
-    System.out.println("Enter your 2nd seconds: ");
     int seconds2 = in.nextInt();
 
     /*
@@ -36,10 +30,6 @@ class Timestamps {
     minuteSum = minutes1 - minutes2;
 
     secondSum = seconds1 - seconds2;
-
-    System.out.println(hourSum);
-    System.out.println(minuteSum);
-    System.out.println(secondSum);
     System.out.println((hourSum + minuteSum + secondSum) * -1);
     // closing the scanner object
     in.close();
