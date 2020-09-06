@@ -27,20 +27,20 @@ class StudentDesks {
         {
             int sum = class1%2;
             sumOfDesks1 = sumOfDesks1 + sum;
-            System.out.println(sumOfDesks1);
-            System.out.println(sum);
+            System.out.print(sumOfDesks1);
+            System.out.print(sum);
             mod1 = true;
         }else if((class2%2) > 0)
         {
             sumOfDesks2 = sumOfDesks2 + (class2%2);
-            System.out.println(sumOfDesks2);
-            System.out.println(class2%2);
+            System.out.print(sumOfDesks2);
+            System.out.print(class2%2);
             mod2 = true;
         }else if((class3%2) > 0)
         {
             sumOfDesks3 = sumOfDesks3 + (class3%2);
-            System.out.println(sumOfDesks3);
-            System.out.println(class3%2);
+            System.out.print(sumOfDesks3);
+            System.out.print(class3%2);
             mod3 = true;
         }else 
         {
@@ -56,41 +56,41 @@ class StudentDesks {
         {
             int sum = class1%2;
             sumOfDesks1 = sumOfDesks1 + sum;
-            System.out.println(sum);
-                        System.out.println(sumOfDesks1);
-            System.out.println(sumOfDesks2);
-            System.out.println(sumOfDesks3);
+            System.out.print(sum);
+            System.out.print(sumOfDesks1);
+            System.out.print(sumOfDesks2);
+            System.out.print(sumOfDesks3);
             sumOfDesks = sumOfDesks1 + sumOfDesks2 + sumOfDesks3;
         }else if(mod2 == true)
         {
             int sum = class2%2;
             sumOfDesks2 = sumOfDesks2 + sum;
-            System.out.println(sum);
-                        System.out.println(sumOfDesks1);
-            System.out.println(sumOfDesks2);
-            System.out.println(sumOfDesks3);
+            System.out.print(sum);
+            System.out.print(sumOfDesks1);
+            System.out.print(sumOfDesks2);
+            System.out.print(sumOfDesks3);
             sumOfDesks = sumOfDesks1 + sumOfDesks2 + sumOfDesks3;
         }else if(mod3 == true)
         {
             int sum = class3%2;
             sumOfDesks3 = sumOfDesks3 + sum;
-            System.out.println(sum);
-                        System.out.println(sumOfDesks1);
-            System.out.println(sumOfDesks2);
-            System.out.println(sumOfDesks3);
+            System.out.print(sum);
+            System.out.print(sumOfDesks1);
+            System.out.print(sumOfDesks2);
+            System.out.print(sumOfDesks3);
             sumOfDesks = sumOfDesks1 + sumOfDesks2 + sumOfDesks3;
         }else
         {
             sumOfDesks1 = class1/2 + class1%1;
             sumOfDesks2 = class2/2 + class1%2;
             sumOfDesks3 = class3/2 + class1%2;
-            System.out.println(sumOfDesks1);
-            System.out.println(sumOfDesks2);
-            System.out.println(sumOfDesks3);
+            System.out.print(sumOfDesks1);
+            System.out.print(sumOfDesks2);
+            System.out.print(sumOfDesks3);
             sumOfDesks = sumOfDesks1 + sumOfDesks2 + sumOfDesks3;
         }
         
-        System.out.println(sumOfDesks);
+        System.out.print(sumOfDesks);
 
         // closing the scanner object
         in.close();
