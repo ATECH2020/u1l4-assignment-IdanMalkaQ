@@ -1,7 +1,6 @@
-
 import java.util.Scanner;
 
-class StudentDesks {
+class StudentDesk {
     public static void main(String[] args) {
 
         //Creates a new scanner for user input
@@ -17,79 +16,19 @@ class StudentDesks {
         int class1 = in.nextInt();
         int class2 = in.nextInt();
         int class3 = in.nextInt();
+        int sum = 0;
 
         /*
          *  your code goes here
          */
 
-        
-        if((class1%2) > 0)
-        {
-            int sum = class1%2;
-            sumOfDesks1 = sumOfDesks1 + sum;
-            System.out.print(sumOfDesks1);
-            System.out.print(sum);
-            mod1 = true;
-        }else if((class2%2) > 0)
-        {
-            sumOfDesks2 = sumOfDesks2 + (class2%2);
-            System.out.print(sumOfDesks2);
-            System.out.print(class2%2);
-            mod2 = true;
-        }else if((class3%2) > 0)
-        {
-            sumOfDesks3 = sumOfDesks3 + (class3%2);
-            System.out.print(sumOfDesks3);
-            System.out.print(class3%2);
-            mod3 = true;
-        }else 
-        {
-            sumOfDesks = sumOfDesks;
-        }
-        sumOfDesks1 = class1/2;
-        sumOfDesks2 = class2/2;
-        sumOfDesks3 = class3/2;
-        
-        
-        
-        if(mod1 == true)
-        {
-            int sum = class1%2;
-            sumOfDesks1 = sumOfDesks1 + sum;
-            System.out.print(sum);
-            System.out.print(sumOfDesks1);
-            System.out.print(sumOfDesks2);
-            System.out.print(sumOfDesks3);
-            sumOfDesks = sumOfDesks1 + sumOfDesks2 + sumOfDesks3;
-        }else if(mod2 == true)
-        {
-            int sum = class2%2;
-            sumOfDesks2 = sumOfDesks2 + sum;
-            System.out.print(sum);
-            System.out.print(sumOfDesks1);
-            System.out.print(sumOfDesks2);
-            System.out.print(sumOfDesks3);
-            sumOfDesks = sumOfDesks1 + sumOfDesks2 + sumOfDesks3;
-        }else if(mod3 == true)
-        {
-            int sum = class3%2;
-            sumOfDesks3 = sumOfDesks3 + sum;
-            System.out.print(sum);
-            System.out.print(sumOfDesks1);
-            System.out.print(sumOfDesks2);
-            System.out.print(sumOfDesks3);
-            sumOfDesks = sumOfDesks1 + sumOfDesks2 + sumOfDesks3;
-        }else
-        {
-            sumOfDesks1 = class1/2 + class1%1;
-            sumOfDesks2 = class2/2 + class1%2;
-            sumOfDesks3 = class3/2 + class1%2;
-            System.out.print(sumOfDesks1);
-            System.out.print(sumOfDesks2);
-            System.out.print(sumOfDesks3);
-            sumOfDesks = sumOfDesks1 + sumOfDesks2 + sumOfDesks3;
-        }
-        
+        sum = (class1%2) +  (class2%2) + (class3%2);
+        sumOfDesks1 = class1 / 2 ;
+        sumOfDesks2 = class2 / 2 ;
+        sumOfDesks3 = class3 / 2 ;
+
+        sumOfDesks = sumOfDesks1 + sumOfDesks2 + sumOfDesks3 + sum;
+            
         System.out.print(sumOfDesks);
 
         // closing the scanner object
