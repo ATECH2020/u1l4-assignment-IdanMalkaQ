@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Timestamps {
+public class Timestamp{
   public static void main(String[] args) {
 
     // Creates a new scanner for user input
@@ -23,14 +23,14 @@ class Timestamps {
      */
     hours1 = hours1 * 3600;
     hours2 = hours2 * 3600;
-    hourSum = hours1 - hours2;
+    hourSum = hours2 - hours1;
 
     minutes1 = minutes1 * 60;
     minutes2 = minutes2 * 60;
-    minuteSum = minutes1 - minutes2;
+    minuteSum = minutes2 - minutes1;
 
-    secondSum = seconds1 - seconds2;
-    System.out.print((hourSum + minuteSum + secondSum) * -1);
+    secondSum = seconds2 - seconds1;
+    System.out.print((hourSum + minuteSum + secondSum));
     // closing the scanner object
     in.close();
   }
