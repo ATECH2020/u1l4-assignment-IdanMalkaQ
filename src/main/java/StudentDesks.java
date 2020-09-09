@@ -1,13 +1,10 @@
 import java.util.Scanner;
 
-class StudentDesk {
+class StudentDesks{
     public static void main(String[] args) {
 
         //Creates a new scanner for user input
         Scanner in = new Scanner(System.in);
-        boolean mod1 = false;
-        boolean mod2 = false;
-        boolean mod3 = false;
         int sumOfDesks = 0;
         int sumOfDesks1 = 0;
         int sumOfDesks2 = 0;
@@ -17,7 +14,6 @@ class StudentDesk {
         int class2 = in.nextInt();
         int class3 = in.nextInt();
         int sum = 0;
-
         /*
          *  your code goes here
          */
