@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class SecondsPastMidnight {
+public class SecondsPastMidnight {
     public static void main(String[] args) {
 
         //Creates a new scanner for user input
@@ -12,7 +12,7 @@ class SecondsPastMidnight {
         //Your code goes here
         minutes = number / 60;
         hours = number / 3600;
-        System.out.print(hours + minutes);
+        System.out.print(hours +" " + minutes);
 
         // closing the scanner object
         in.close();
