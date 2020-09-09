@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Timestamp{
+public class Timestamps{
   public static void main(String[] args) {
 
     // Creates a new scanner for user input
