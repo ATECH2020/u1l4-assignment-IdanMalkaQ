@@ -18,7 +18,7 @@ class AnalogClock{
         
         int min = (int)Math.round(minute);
         int minAng = (int)Math.round(minuteAngle);
-        System.out.print(minAng + " " + min);
+        System.out.print(minAng/* + " " + min*/);
     
         // closing the scanner object
         in.close();
